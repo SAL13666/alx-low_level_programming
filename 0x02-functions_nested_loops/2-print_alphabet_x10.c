@@ -1,17 +1,15 @@
 #include "main.h"
 
 /**
- * main - Prints all possible combinations of single-digit numbers.
- *
- * Return: Always 0.
+ * print_alphabet_x10 - Prints all possible combinations of single-digit numbers.
  */
 void print_alphabet_x10(void)
 {
 char a;
-int n=0;
+int n = 0;
 while (n < 10)
 {
-for (a ='a' ; a <= 'z'; a++)
+for (a = 'a' ; a <= 'z'; a++)
 
 _putchar(a);
 
