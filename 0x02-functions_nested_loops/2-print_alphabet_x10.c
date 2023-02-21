@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - Prints all possible combinations of single-digit numbers.
+ * print_alphabet_x10 - 
+ * Prints all possible combinations of single-digit numbers.
  */
 void print_alphabet_x10(void)
 {
