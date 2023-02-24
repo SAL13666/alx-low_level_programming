@@ -1,16 +1,16 @@
 #include "main.h"
 /**
- * _isdigit - Prints every minute of the day of
- *              Jack Bauer, starting from 00:00 to 23:59.
- */
-int _isdigit(int c)
+  * _isdigit - Check if a character is a digit
+  * @x: The number to be checked
+  *
+  * Return: 1 for a character that will be a digit or 0 for any else
+  */
+int _isdigit(int x)
 {
-if (c >= 0 && c <= 9)
-{
-return (1);
-}
-else
-{
-return (0);
-}
+	if (x >= 48 && x <= 57)
+	{
+		return (1);
+	}
+
+	return (0);
 }
