@@ -1,17 +1,25 @@
 #include "main.h"
+
 /**
-  * puts2- print a string reversed followed by new line
-  * @str: the string
+  * puts2 - Prints every other character of a string
+  * @str: The string to be treated
+  *
   * Return: void
   */
 void puts2(char *str)
 {
-int i = 0,j = 0;
-while (str[i] != '\0')
-i++;
-while (j < i)
-{
-_putchar(str[j]);
-j += 2;
-}
-}
+	int i;
+	int j = 0;
+
+	while (str[j] != '\0')
+	{
+		j++;
+	}
+
+	for (i = 0; i < j; i += 2)
+	{
+		_putchar(str[i]);
+	}
+
+	_putchar('\n');
+} 
