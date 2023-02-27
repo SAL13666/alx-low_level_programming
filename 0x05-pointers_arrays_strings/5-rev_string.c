@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
   * rev_string - Reverses a string
@@ -31,3 +31,4 @@ void rev_string(char *s)
 		a--;
 	}
 }
+
