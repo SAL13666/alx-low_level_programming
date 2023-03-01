@@ -1,7 +1,7 @@
 #include "main.h"
 /**
   * _strcat- print a string reversed followed by new line
-  * @str: the string
+  * @src: the string
   * @dest: the string
   * Return: dest
   */
