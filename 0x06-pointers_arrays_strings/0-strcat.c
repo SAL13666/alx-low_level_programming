@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
   * _strcat- print a string reversed followed by new line
@@ -12,8 +13,7 @@ while (dest[dlen] != '\0')
 {
 dlen++;
 }
-dlen++;
-for (int i = 0; src[i] != 0; i++)
+for (int i = 0; src[i] != '\0'; i++)
 {
 dest[dlen] = src[i];
 dlen++;
@@ -21,7 +21,3 @@ dlen++;
 dest[dlen] = '\0';
 return (dest);
 }
-
-
-
-
