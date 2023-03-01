@@ -12,6 +12,7 @@ while (dest[dlen] != '\0')
 {
 dlen++;
 }
+dlen++;
 for (int i = 0; src[i] != 0; i++)
 {
 dest[dlen] = src[i];
