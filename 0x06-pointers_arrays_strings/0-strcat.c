@@ -15,7 +15,7 @@ dlen++;
 int i;
 for (i = 0; src[i] != '\0'; i++)
 {
-dest[dlen+ i] = src[i];
+dest[dlen + i] = src[i];
 dlen++;
 }
 dest[dlen + i] = '\0';
