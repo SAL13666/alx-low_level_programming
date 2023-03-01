@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 /**
   * _strcat- print a string reversed followed by new line
