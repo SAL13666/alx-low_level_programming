@@ -1,27 +1,31 @@
 #include "main.h"
+
 /**
-  * _strncat- print a string reversed followed by new line
-  * @src: the string
-  * @dest: the string
-  * @n: the number
-  * Return: dest
+  * _strncat - Concatenates two strings
+  * @dest: The destination value
+  * @src: The source value
+  * @n: The limit of the concatenation
+  *
+  * Return: A pointer to the resulting string dest
   */
 char *_strncat(char *dest, char *src, int n)
 {
-int dlen = 0;
-while (dest[dlen])
-dlen++;
+	int dlen = 0, j = 0;
 
-for (int i = 0; i < n && src[i]; i++)
-{
-dest[dlen] = src[i];
-i++;
-dlen++;
+	while (dest[dlen])
+	{
+		dlen++;
+	}
+
+	while (j < n && src[j])
+	{
+		dest[dlen] = src[j];
+		dlen++;
+		j++;
+	}
+
+	dest[dlen + n + 1] = '\0';
+
+	return (dest);
 }
-dest[dlen + n + 1] = '\0';
-
-return(dest)
-}
-
-
 
