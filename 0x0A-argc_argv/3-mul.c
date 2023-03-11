@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
   * main - Prints the multiplication of two args numbers
   * @argc: argument count
@@ -9,17 +10,19 @@
   */
 int main(int argc, char *argv[])
 {
-	int i = 0 , j = 0;
+	int i = 0, j = 0;
+
 	if (argc == 3)
 	{
 		i = atoi(argv[1]);
 		j = atoi(argv[2]);
-		printf("%d\n", i * j);
+		printf("%d\n", j * i);
 	}
-	else 
+	else
 	{
-		printf("Erorr\n");
+		printf("Error\n");
 		return (1);
 	}
+
 	return (0);
 }
