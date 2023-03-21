@@ -1,12 +1,10 @@
 #ifndef DOG
 #define DOG
 /**
-  * _memset - Fill memory with a constant byte
-  * @s: memory area to fill
-  * @b: constant byte to fill
-  * @n: bytes of memory area to fill
-  *
-  * Return: the memory area filled
+  * struct dog - structure for a dog
+  * @name: the name of the dog
+  * @age: the age of the dog
+  * @owner: the owner of the dog
   */
 
 struct dog
