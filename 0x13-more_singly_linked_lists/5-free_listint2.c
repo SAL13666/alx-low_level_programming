@@ -16,8 +16,8 @@ if (head == NULL)
 return;
 while (*head != NULL)
 {
-next = (*head)->next;
+next_node = (*head)->next;
 free(*head);
-*head = next;
+*head = next_node;
 }
 }
