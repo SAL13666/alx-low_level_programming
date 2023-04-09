@@ -1,20 +1,27 @@
 #include "main.h"
 /**
+ *strln - count the length of array
+ *@s: pointer pointing to an array of chars
+ *Return: length
+ */
+int strln(const char *s)
+{
+int len = 0;
+while (*s)
+{
+len++;
+s++;
+}
+
+return (len);
+}
+
+/**
  * binary_to_uint -converts a binary number to an unsigned int.
  * @b: pointing to a string of 0 and 1 chars
  *
  * Return:converted number, or 0
  */
-int strln(const char *s)
-{
-	int len = 0;
-	while(*s)
-	{
-		len++;
-		s++;
-	}
-	return (len);
-}
 unsigned int binary_to_uint(const char *b)
 {
 int i;
