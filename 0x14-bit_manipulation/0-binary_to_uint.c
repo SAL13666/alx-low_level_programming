@@ -7,6 +7,7 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
+int i;
 unsigned int number = 0;
 int multi = 1;
 char *copy = b;
@@ -20,7 +21,7 @@ while (*copy)
 len++;
 copy++;
 }
-for (int i = len - 1; i >= 0; i--)
+for (i = len - 1; i >= 0; i--)
 {
 if (b[i] == '1')
 {
