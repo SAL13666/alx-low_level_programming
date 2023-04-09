@@ -5,6 +5,16 @@
  *
  * Return:converted number, or 0
  */
+int strln(const char *s)
+{
+	int len = 0;
+	while(*s)
+	{
+		len++;
+		s++;
+	}
+	return (len)
+}
 unsigned int binary_to_uint(const char *b)
 {
 int i;
@@ -16,11 +26,7 @@ int len = 0;
 
 if (b == 0)
 return (0);
-while (*copy)
-{
-len++;
-copy++;
-}
+len = strln(b);
 for (i = len - 1; i >= 0; i--)
 {
 if (b[i] == '1')
