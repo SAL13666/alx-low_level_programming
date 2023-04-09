@@ -13,14 +13,13 @@ int strln(const char *s)
 		len++;
 		s++;
 	}
-	return (len)
+	return (len);
 }
 unsigned int binary_to_uint(const char *b)
 {
 int i;
 unsigned int number = 0;
 int multi = 1;
-char *copy = b;
 int len = 0;
 
 
