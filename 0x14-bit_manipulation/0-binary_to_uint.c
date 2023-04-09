@@ -7,18 +7,29 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-unsigned int number;
+unsigned int number = 0;
+int multi = 1;
+char *copy = b;
+int len = 0;
 
-number = 0;
-if (!b)
+
+if (b == 0)
 return (0);
-for (int i = 0; b[i] != '\0'; i++)
+while (*copy)
 {
-if (b[i] != '0' && b[i] != '1')
-return (0);
-number <<= 1;
+len++;
+copy++;
+}
+for (int i = len - 1; i >= 0; i--)
+{
 if (b[i] == '1')
-number += 1;
+{
+number += multi;
+}
+else if (b[i] != '0')
+return (0);
+multi *= 2;
 }
 return (number);
 }
+
