@@ -31,7 +31,7 @@ return (0);
 }
 
 free(buffer);
-close(o);
+close(open1);
 
-return (w);
+return (write1);
 }
